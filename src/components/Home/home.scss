@@ -1,0 +1,25 @@
+.home{
+    height:100%;
+    width:100%;
+    max-width:100%;
+    background-image: url('../../Assets/images/animalhills2.svg');
+    background-size: 100% 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.center{
+     margin: 0 auto; 
+     width:40%;
+}
+.image{
+    width:50%;
+    height:50%;
+    margin: 0 auto; 
+    margin-left:25%;
+}
+.subtitle{
+    margin: 0 auto;
+    margin-left:20%;
+    font-weight:bold;
+    font-size: 30px;
+}
