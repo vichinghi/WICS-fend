@@ -5,6 +5,7 @@ import CrimeAreaCard from '../common/CrimeAreaCard';
 import {  getIncidence } from '../data';
 import { MDBBtn } from 'mdbreact';
 import Modal from '../common/Modal';
+import {Link} from 'react-router-dom';
 import Navbar from '../common/NavBar';
 
 const CrimeAreas = () => {
@@ -18,9 +19,9 @@ const CrimeAreas = () => {
         })
       },[]);
 
-const getModalData = async (e)=>{
+const getModalData = async ({id})=>{
     const newArray = await data.filter(function(result) {
-        return result.id == e.target.getAttribute('id');
+        return result.id == id;
       });
       await setModalData(newArray)
       setOpen(!open)
@@ -45,16 +46,18 @@ const getModalData = async (e)=>{
                 <div className="area-card">
                 {data&&data.map((result)=>{
                return <CrimeAreaCard
-               title={result.where_it_happend}
-               id={result.id}
-               key={result.id}
-               body={result.what_happened}
+               what_happened={result.what_happened}
+                    id={result.id}
+                    key={result.id}
+                    where_it_happend={result.where_it_happend}
+                    website={result.website}
+                    url={result.url}
                onClick={getModalData}
                />
             })}
                 </div>
                 <div className="view-btn" >
-                <MDBBtn href="#" >View More</MDBBtn>
+                <MDBBtn  ><Link to="/alerts">View More</Link></MDBBtn>
                 </div>
 
             </div>

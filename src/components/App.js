@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home';
-import Navbar from './common/NavBar';
 import Settings from './settings';
 import Statistics from "./Statistics";
 import CrimeAreas from './CrimeAreas';
+import AlertList from "./AlertList";
 
 
 export const NotFound = () => (
@@ -21,6 +21,7 @@ class App extends Component {
           <Route exact path="/settings" component={Settings} />
           <Route exact path="/statistics" component={Statistics} />
           <Route exact path="/crime-areas" component={CrimeAreas} />
+          <Route exact path="/alerts" component={AlertList} />
           <Route component={NotFound} />
         </Switch>
       </Router>
