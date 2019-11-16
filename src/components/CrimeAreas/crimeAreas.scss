@@ -1,0 +1,71 @@
+.crime-areas{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .map{
+        height: 90%;
+        width:80%;}
+    .head{
+        margin:10px auto;
+
+    }
+    .critical-alerts{
+        background-color: #28770b;
+        position:absolute;
+        bottom:0;
+        right:0;
+        width: 30%;
+        height: 50%;
+        margin-right:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .header{
+            color:white;
+            margin-top:10px ;
+
+        }
+
+        .area-card{
+            overflow-y: scroll;
+            border-bottom: 20px solid #28770b;
+            .card{
+                margin:10px auto;
+
+            }
+            .btn-default {
+                position:absolute;
+                bottom:0;
+                right:0;
+                background-color: #f2c611!important;
+                height:10px;
+                font-size:12px;
+                display: flex;
+                align-items: center;
+
+            }
+
+        }
+        .view-btn{
+            .btn-default {
+                background-color: #f2c611!important;
+                height:10px;
+                font-size:12px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+    }
+    .modal-footer{
+        .btn-secondary {
+            margin-right:40%;
+            background-color: #28770b!important;
+        }
+    }
+}
