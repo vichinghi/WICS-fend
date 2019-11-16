@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Navbar from './common/NavBar';
 import Settings from './settings';
+import Statistics from "./Statistics";
 
 
 export const NotFound = () => (
@@ -17,6 +18,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/settings" component={Settings} />
+          <Route exact path="/statistics" component={Statistics} />
           <Route component={NotFound} />
         </Switch>
       </Router>

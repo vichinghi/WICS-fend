@@ -23,6 +23,9 @@ render() {
             <MDBNavItem active>
               <MDBNavLink to="/">Home</MDBNavLink>
             </MDBNavItem>
+            <MDBNavItem active>
+              <MDBNavLink to="/statistics">Statistics</MDBNavLink>
+            </MDBNavItem>
             <MDBNavLink to="/settings">Settings</MDBNavLink>
           </MDBNavbarNav>
           <MDBNavbarNav right>
