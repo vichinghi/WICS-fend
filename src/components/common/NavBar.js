@@ -23,11 +23,14 @@ render() {
             <MDBNavItem active>
               <MDBNavLink to="/">Home</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem active>
+            <MDBNavItem >
               <MDBNavLink to="/statistics">Statistics</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem active>
+            <MDBNavItem >
             <MDBNavLink to="/settings">Settings</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem >
+            <MDBNavLink to="/crime-areas">Crime  Areas</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
