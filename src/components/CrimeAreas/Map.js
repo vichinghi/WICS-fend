@@ -18,7 +18,7 @@ const Map = ({crimeData})=>{
         <div className="map">
             <GoogleMap
             defaultCenter={{ lat: 0.347596, lng: 32.582520 }}
-            defaultZoom={7}
+            defaultZoom={3}
             >
             {crimeData&&crimeData.map((result)=>{
                return (result.location&&result.location.lat&&<Marker
