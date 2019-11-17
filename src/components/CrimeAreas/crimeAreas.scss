@@ -33,6 +33,7 @@
 
         .area-card{
             overflow-y: scroll;
+            width: 90%;
             border-bottom: 20px solid #28770b;
             .card{
                 margin:10px auto;
@@ -47,6 +48,9 @@
                 font-size:12px;
                 display: flex;
                 align-items: center;
+                a {
+                     color: white !important;
+                     }
 
             }
 
