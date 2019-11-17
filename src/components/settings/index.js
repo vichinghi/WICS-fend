@@ -18,7 +18,7 @@ class Settings extends Component {
     };
     sendKeyword = () => {
         const data = { "word": this.state.keyWords };
-        fetch('wics.herokuapp.com/keyword', {
+        fetch('https://wics.herokuapp.com/keyword', {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -36,7 +36,7 @@ class Settings extends Component {
 
     sendAddress = () => {
         const url = { "url": this.state.address }
-        fetch('wics.herokuapp.com/website', {
+        fetch('https://wics.herokuapp.com/website', {
             method: "POST",
             headers: {
                 Accept: "application/json",
